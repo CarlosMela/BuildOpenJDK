@@ -21,6 +21,6 @@ dependencies:
     - cd jdk9
     - dir
     - sudo chmod u+x jdk9/get_source.sh
-    - sudo jdk9/get_source.sh
+    - jdk9/get_source.sh
     - bash configure --disable-warnings-as-errors
 
