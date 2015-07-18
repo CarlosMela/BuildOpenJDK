@@ -4,10 +4,7 @@ machine:
   timezone:
     Europe/London # Set the timezone
 
-  # Version of ruby to use
-  java:
-    version:
-      Oracle JDK 8
+
 
 
 ## Customize dependencies
