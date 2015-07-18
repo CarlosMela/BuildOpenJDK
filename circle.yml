@@ -13,15 +13,13 @@ machine:
 ## Customize dependencies
 dependencies:
   pre:
-    - sudo apt-get install mercurial
+    - sudo apt-get update mercurial
     - sudo apt-get update
     - sudo apt-get install build-essential zip unzip
     - sudo apt-get install libX11-dev libxext-dev libxrender-dev libxtst-dev libxt-dev
     - sudo apt-get install libfreetype6-dev libcups2-dev libasound2-dev ccache libffi-dev
-    - sudo hg clone http://hg.openjdk.java.net/jdk9/jdk9 jdk9
-    - cd jdk9
-    - dir
-    - sudo chmod u+x jdk9/get_source.sh
-    - sudo jdk9/get_source.sh
+    - sudo hg clone http://hg.openjdk.java.net/jdk9/jdk9 .
+    - sudo chmod u+x ./get_source.sh
+    - sudo ./get_source.sh
     - bash configure --disable-warnings-as-errors
 
