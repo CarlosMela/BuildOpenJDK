@@ -4,14 +4,17 @@ machine:
   timezone:
     Europe/London # Set the timezone
 
-
+  # Version of java to use
+  java:
+    version:
+      oraclejdk8
 
 
 ## Customize dependencies
 dependencies:
   pre:
     - sudo apt-get install build-essential zip unzip 
-    - sudo libX11-dev libxext-dev libxrender-dev libxtst-dev libxt-dev 
+    - sudo libxext-dev libxrender-dev libxtst-dev libxt-dev 
     - sudo libfreetype6-dev libcups2-dev libasound2-dev ccache g++-4.7-multilib libffi-dev
     - sudo hg clone http://hg.openjdk.java.net/jdk9/jdk9 jdk9
     - sudo cd jdk9
