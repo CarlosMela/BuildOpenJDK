@@ -1,9 +1,6 @@
 ## Customize the test machine
 machine:
 
-  timezone:
-    Europe/London # Set the timezone
-
   # Version of java to use
   java:
     version:
@@ -13,7 +10,6 @@ machine:
 ## Customize dependencies
 dependencies:
   pre:
-    - sudo apt-get update mercurial
     - sudo apt-get update
     - sudo apt-get install build-essential zip unzip
     - sudo apt-get install libX11-dev libxext-dev libxrender-dev libxtst-dev libxt-dev
