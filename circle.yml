@@ -1,0 +1,19 @@
+## Customize the test machine
+machine:
+
+  timezone:
+    Europe/London # Set the timezone
+
+  # Version of ruby to use
+  java:
+    version:
+      Oracle JDK 8
+
+
+## Customize dependencies
+dependencies:
+  pre:
+    - javac BuildMain.java
+    - java BuildMain
+
+  
