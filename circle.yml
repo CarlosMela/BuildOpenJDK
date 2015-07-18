@@ -20,7 +20,7 @@ dependencies:
     - sudo hg clone http://hg.openjdk.java.net/jdk9/jdk9 jdk9
     - cd jdk9
     - dir
-    - chmod u+x get_source.sh
-    - ./get_source.sh
+    - chmod u+x jdk9/get_source.sh
+    - jdk9/get_source.sh
     - bash configure --disable-warnings-as-errors
 
