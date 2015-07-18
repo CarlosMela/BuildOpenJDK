@@ -15,6 +15,7 @@ dependencies:
     - sudo apt-get install libX11-dev libxext-dev libxrender-dev libxtst-dev libxt-dev
     - sudo apt-get install libfreetype6-dev libcups2-dev libasound2-dev ccache libffi-dev
     - sudo hg clone http://hg.openjdk.java.net/jdk9/jdk9 jdk9
+    - ls -R
     - sudo chmod u+x ./jdk9/get_source.sh
     - sudo ./jdk9/get_source.sh
     - bash configure --disable-warnings-as-errors
